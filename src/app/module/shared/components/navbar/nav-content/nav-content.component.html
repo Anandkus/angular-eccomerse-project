@@ -1,0 +1,28 @@
+<div class="w-full">
+    <div class="bg-gray-950 text-white w-full shadow-lg p-6 h-1/2">
+        <div class="flex justify-around">
+            <div class="flex flex-col" *ngFor="let item of category">
+                <h2 class="text-center text-blue-300">{{item.name}}</h2>
+                <button class="mb-3 " mamat-button color="primary" *ngFor="let section of item.items">
+                    {{section.name}}
+                </button>
+            </div>
+            <div class="hidden lg:block">
+                <div class="mb-5">
+                    <img class="w-[19rem] h-[20rem] object-cover object-top rounded-md "
+                        src="https://images.pexels.com/photos/45982/pexels-photo-45982.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="">
+                </div>
+                <p class="text-gray-600">New Arrival</p>
+            </div>
+            <div class="hidden lg:block">
+                <div class="mb-5">
+                    <img class="w-[19rem] h-[20rem] object-cover object-top rounded-md "
+                        src="https://images.pexels.com/photos/1639729/pexels-photo-1639729.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="">
+                </div>
+                <p class="text-gray-600">New Arrival</p>
+            </div>
+        </div>
+    </div>
+</div>
